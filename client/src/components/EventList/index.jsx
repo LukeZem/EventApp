@@ -3,6 +3,15 @@ import axios from 'axios';
 import './index.css';
 
 const EventList = () => {
+
+  // compnent lifecycle
+  // 1. mounts (state runs, code runs, JSX gets put on screen)
+  // 2. useEffects run
+  // 3. setState
+  // 4. rerender (recalculate state, code runs, NEW JSX)
+  // 5. dismounts ?
+
+
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
